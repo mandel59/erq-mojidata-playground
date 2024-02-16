@@ -21,9 +21,7 @@ Let's prepare to play with Erq and Mojidata.
 
 4. Start the terminal.
 
-   > [!TIP]
-   >
-   > If you're using Windows, start Git Bash.
+   - If you're using Windows, start Git Bash.
 
 5. Enter the command to clone (download) this repository.
 
