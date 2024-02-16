@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "erq-mojidata-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mandel59/erq": "^0.1.0",
+    "@mandel59/idstool": "^1.4.2",
+    "@mandel59/mojidata": "^1.4.1",
+    "@mandel59/mojidata-cli": "^1.4.1"
+  }
+}
