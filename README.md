@@ -4,9 +4,9 @@
 
 ## What's this?
 
-Erq Mojidata Playground is a project to play with Erq and Mojidata data.
+Do you want to play with a kanji database? Try Erq Mojidata Playground! Analyze the free kanji database collection Mojidata with the original database query language Erq and discover new things about kanji! You can easily play by cloning this repository.
 
-You can clone this repository and run it locally to play with Erq and Mojidata data.
+Please note that the explanatory article is currently being created and has not yet been confirmed to work in each environment. If it doesn't work well, I would appreciate it if you could [create an Issue](https://github.com/mandel59/erq-mojidata-playground/issues/new).
 
 ## Table of Contents
 
