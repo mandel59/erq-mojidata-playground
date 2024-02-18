@@ -1,0 +1,15 @@
+-- Title: Characters with one stroke
+-- Description: This script generates a list of characters with one stroke.
+-- Command: npx erq --init mojidata.erq <examples/chars-one-stroke.erq >examples/output/chars-one-stroke.md
+
+{markdown: E'# Characters with one stroke\n'}
+  output raw;;
+
+unihan_kTotalStrokes[value='1']
+  {char: UCS}
+  {markdown:
+    E'\n## U+\%04X(unicode(char)) \(char)\n\n'
+    || E'![\(char)](https://glyphwiki.org/glyph/u\%04x(unicode(char)).svg)\n\n'
+    || E'- [Mojidata Web App](https://mojidata.ryusei.dev/mojidata/\(char))\n'
+    || E'- [GlyphWiki](https://glyphwiki.org/wiki/u\%04x(unicode(char)))\n'}
+  output raw;;

@@ -1,7 +1,7 @@
 -- Title[lang=en]: Correspondence between the initial consonants of Japanese and standard Chinese pronunciation
 -- Title[lang=ja]: 日本語と標準中国語の頭子音の対応
--- Description[lang=en]: For the Jōyō kanji, I looked at the correspondence between the on'yomi of Japanese and the initial consonants of standard Chinese pronunciation, and made a heatmap.
--- Description[lang=ja]: 常用漢字について、日本語の音読みと標準中国語音の頭子音の対応を調べ、ヒートマップにした。
+-- Description[lang=en]: Heatmap of Japanese and Mandarin Chinese Initial Consonant Correspondence (Aggregated for Jōyō Kanji)
+-- Description[lang=ja]: 日本語と標準中国語の頭子音対応ヒートマップ（常用漢字に関して集計）
 -- Command: npx erq --init mojidata.erq <examples/jazh-consonants.erq
 -- Original: https://gist.github.com/mandel59/c157d1a7d58e51b5d85b751f9d8fd28e
 
