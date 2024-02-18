@@ -371,3 +371,7 @@ Now you can peek at tables and search for data.
 >
 > If the table name contains symbols, enclose the table name in ` `` ` in the query.
 > For example, if you want to see the contents of `kdpv_cjkvi/simplified`, write the query `` `kdpv_cjkvi/simplified` limit 20;; ``.
+
+## Erqを終了する
+
+To exit Erq, press `Ctrl+D`.

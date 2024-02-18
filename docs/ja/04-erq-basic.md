@@ -377,3 +377,7 @@ select * from unihan_kJapanese where (value glob '*あげる*') and (value glob 
 > 表の名前に記号が入っている場合は、クエリ中の表の名前を ` `` ` で囲ってください。
 > たとえば、`kdpv_cjkvi/simplified` の中身を見たいなら
 > `` `kdpv_cjkvi/simplified` limit 20;; `` というクエリを書きます。
+
+## Erqを終了する
+
+Erqを終了するには `Ctrl+D` を入力してください。
