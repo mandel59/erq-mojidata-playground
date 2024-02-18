@@ -1,0 +1,30 @@
+-- Title[lang=en]: Correspondence between the initial consonants of Japanese and standard Chinese pronunciation
+-- Title[lang=ja]: 日本語と標準中国語の頭子音の対応
+-- Description[lang=en]: For the Jōyō kanji, I looked at the correspondence between the on'yomi of Japanese and the initial consonants of standard Chinese pronunciation, and made a heatmap.
+-- Description[lang=ja]: 常用漢字について、日本語の音読みと標準中国語音の頭子音の対応を調べ、ヒートマップにした。
+-- Command: npx erq --init mojidata.erq <examples/jazh-consonants.erq
+-- Original: https://gist.github.com/mandel59/c157d1a7d58e51b5d85b751f9d8fd28e
+
+with ja as (
+  k: unihan_kJapaneseOn
+  join o: string_split(k.value, ' ')
+  {UCS, ja_c: ifnull(regexp_substr(lower(o.value), '^(ch|ts|sh|[hfbmtdnrszjkgwy])'), '∅')}
+)
+with zh as (
+  k: unihan_kMandarin
+  join p: string_split(k.value, ' ')
+  {UCS, zh_c: ifnull(regexp_substr(p.value, '^(zh|ch|sh|[bpmfdtnlzcsrjqxgkhwy])'), '∅')}
+)
+  joyo { UCS: 漢字 }
+  join ja using (UCS)
+  join zh using (UCS)
+  { ja_c, zh_c => count: count(distinct UCS) }
+  output to 'examples/output/jazh-consonants.svg' format vega lite svg with
+    encoding {
+      x: ja_c n sort['h','f','b','m','t','ch','ts','d','n','r','s','sh','z','j','k','g','w','y','∅'],
+      y: zh_c n sort['b','p','m','f','d','t','n','l','zh','ch','sh','z','c','s','j','q','x','r','g','k','h','w','y','∅']
+    },
+    layer(
+      mark rect, encoding { color: count q };
+      mark text, encoding { text: count q }
+    );;

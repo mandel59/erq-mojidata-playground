@@ -14,3 +14,7 @@ Please note that the explanatory article is currently being created and has not 
 2. [Play with `mojidata` command](docs/en/02-mojidata.md)
 3. [Play with `ids-find` command](docs/en/03-idsfind.md)
 4. [Play with Erq: Basic](docs/en/04-erq-basic.md)
+
+## Examples
+
+See [Erq Mojidata Examples](examples/index.md).

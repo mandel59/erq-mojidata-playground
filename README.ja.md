@@ -12,3 +12,7 @@
 2. [`mojidata` コマンドで遊ぶ](docs/ja/02-mojidata.md)
 3. [`ids-find` コマンドで遊ぶ](docs/ja/03-idsfind.md)
 4. [Erqで遊ぶ 基本編](docs/ja/04-erq-basic.md)
+
+## 作例
+
+[Erq Mojidata Examples](examples/index.md)を参照してください。
