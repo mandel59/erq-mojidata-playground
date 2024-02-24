@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mandel59/erq": "^0.1.1",
+    "@mandel59/erq": "^0.1.2",
     "@mandel59/idstool": "^1.4.2",
     "@mandel59/mojidata": "^1.4.1",
     "@mandel59/mojidata-cli": "^1.4.1"
